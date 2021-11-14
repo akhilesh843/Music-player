@@ -1,0 +1,818 @@
+
+
+:root{
+	--artist-color: #141b41;
+}
+
+
+body{
+	background-color: #230341;
+
+}
+
+
+/*music logo design*/
+.music-logo{
+	margin-left: 50px;
+	margin-top: 22px;
+	margin-bottom: 5px;
+}
+.music-logo img{
+	border-radius: 50%;
+}
+
+/*title*/
+
+#font-title{
+color: white;
+font-weight: 2;
+font-size: 1.5rem;
+margin-left: 8%;
+margin-top: -3%;
+}
+#font-title:hover{
+	color: cyan;
+}
+
+#font{
+	color: white;
+font-weight: 2;
+font-size: 1.5rem;
+margin-left: 24%;
+margin-top: -3%;
+
+}
+
+#font:hover{
+	color: orangered;
+}
+
+/* form section */
+form{
+	margin-left: 70%;
+	margin-top: -4%;
+	display: flex;
+	outline: none;
+}
+.container{
+	margin-left: 52%;
+	margin-top: -4%;
+	position: absolute;
+}
+
+.search-box{
+	border-radius: 50px;
+	background: white;
+	border: 2px solid #76b39d;
+}
+form{
+	margin: 0;}
+
+input{
+      border: none;
+      margin: 5px 5px  0px;
+      font-size: 20px;
+      outline: none;
+      color: #085f63;
+}
+i{
+	font-size: 20px;
+	margin: 0px 10px;
+	color: #a5acaf;
+}
+button{
+	background: transparent;
+	border: none;
+}
+
+
+
+/*notification*/
+.notification-bell{
+	margin-left: 83%;
+	margin-top: -4%;
+}
+.notification-bell img{
+	border-radius: 50%;
+}
+/*profile section*/
+.profile{
+	margin-left: 90%;
+	margin-top: -3%;
+}
+.profile img{
+	border-radius: 50%;
+}
+
+/* artist section */
+
+.artist{
+	height: 20vw;
+	width: 62%;
+	margin-top: 70px;
+	margin-left: 85px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--artist-color);
+	margin-bottom: 40px;
+	position: relative;
+}
+
+/* details  */
+.detail{
+	width: 69%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-sizing: border-box;
+	padding-right: 12px;
+}
+
+
+/* artist description */
+
+.artist-description{
+	width: 100%;
+	height: max-content;
+}
+
+.subscription{
+	height: max-content;
+	 width: 100%;
+
+}
+
+
+/* song name  */
+.song-name{
+	display: inline-block;
+}
+
+
+
+/* song name heading properties */
+.song-name h1{
+	
+	margin-left: 61%;
+	font-size: 2vw;
+}
+
+/* follower section */
+.followers{
+	position: absolute;
+	margin-right:2% ;
+	font-size: 1.1vw;
+	right: 0%;
+	top: 10%;
+	display: inline-block;
+	color: white;
+}
+
+
+
+.artist-name{
+	color: white;
+	margin-top: -2%;
+	margin-left: 15%;
+	font-size: 1.2vw;
+	
+	
+}
+
+
+/* artist self explaination  */
+.brief {
+	color: white;
+	width: 86%;
+	font-size: 1vw;
+	margin-right: 20%;
+	margin-left: 15%;
+}
+
+.subscription p{
+	color: white;
+	margin-left: 17%;
+	font-size: 1vw;
+
+}
+
+
+.btns > button {
+	border: 0px;
+	height: 3vw;
+	width: 10vw;
+	color: white;
+	margin-left: 15%;
+	font-size: 1.2vw;
+	background-color: purple;
+}
+
+
+
+     /* ----------  playlist queue -----------------------*/
+
+.playlist-queue{
+	height: 8vh;
+      box-sizing: border-box ;
+	background-color: #1a1e33;;
+	margin-bottom: 12px;
+	display: flex;
+	width: 62%;
+	margin-left: 6%;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 12px;
+	
+}
+
+ 
+  /* playlist queue hover effect */
+
+ .playlist-queue:hover {
+	background-color: #2e3249;
+	/*border: 1px solid white;*/
+}
+
+     /* left-side of playlist queue */
+
+.left-side{
+	width: 30%;
+	height: 100%;
+	padding: 0% 1%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	
+}
+
+/*------------- center contain duration the song------------- */
+
+.center {
+	width: min-content;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	}
+  
+  /* -------------right-side contains icons--------------- */
+
+.right-side{
+	width: 50px;
+	height: 100%;
+	padding-right: 2%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+/* animation for glowing heart Queue items */
+
+
+@keyframes glowing-heart{
+	0% {
+		color: yellow;
+	}
+	50% {
+		color: orangered;
+	}
+	100% {
+		color: red;
+	}
+}
+
+
+/* hover effect on heart */
+
+
+.right-side:hover .fa-heart, .fa-plus{
+	animation-name: glowing-heart;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-duration: 1s;
+}
+
+
+
+
+
+/* ------- adjust the content of left-side, center and right-side ---*/
+
+.left-side > div:nth-child(2) {
+	height: 80%;
+	margin: 0px 12% 0px 12%;
+	min-width: 50px;
+	max-width: 50px;
+	position: relative;
+}
+
+.left-side > div:nth-child(2) img {
+	height: 100%;
+	width: 100%;
+	
+}
+
+.left > div:nth-child(3) p {
+	color: rgb(185, 185, 185);
+}
+
+    /*----------- customize the play button---------------------*/
+
+.play-button{
+	height: 100%;
+	width: 100%;
+	top: 0%;
+	left: 0%;
+	position: absolute;
+      background-color: black;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: all ease-in-out 0.2s;
+}
+
+     /* -------------- hover effects------------- */
+
+.play-button:hover {
+	opacity: 0.8;
+}
+
+/* -------------- adjust fonts in the playlist queue ----------- */
+
+.left-side div p{
+	font-size: 13px;
+}
+
+.center{
+	font-size: 12px;
+	color: rgb(185, 185, 185);
+}
+
+.right-side{
+	color: rgb(185, 185, 185);
+}
+
+.right-side div:nth-child(2) {
+	margin-left: 27%;
+}
+
+
+
+/* margin and color of  h,p */
+
+
+div{
+	color: white;
+}
+
+h5{
+	margin-bottom: 10%;
+}
+
+p{
+	margin-top: 1%;
+}
+
+
+/* ---------- aside section ------------- */
+
+.aside{
+
+	float: right;
+	margin: 0 1.5%;
+	width: 30%;
+	margin-right: -1%;
+	margin-top: -80%;
+
+
+}
+/* -----------  aside heading ------------*/ 
+
+.aside-heading h4{
+	
+	margin-left: 70%;
+	margin-top: -10%;
+
+}
+.aside-heading h4 a{
+	text-decoration: none;
+	color: yellow;
+}
+
+.view-options {
+	position: fixed;
+	right: 4%;
+	top: 14%;
+	background-color: #f8f9fa;
+	width: 10%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 1%;
+	box-sizing: border-box;
+	overflow: hidden;
+	z-index: 2; /* to cover the heart icon */
+	opacity: 0;
+	transform: scale(0);
+	transition: all ease-in-out 0.25s;
+}
+
+
+/*   view option boxes become target */
+
+
+#view-option-boxes:target{
+	opacity:1;
+	transform:scale(1);
+}
+.view-options{
+	color: black;
+}
+.view-options p{
+	text-align: center;
+}
+.view-options p a{
+	text-decoration: none;
+}
+
+ /*---------- Similar artist in queue ------------*/
+
+
+.queue{
+	height: 35vh;
+	overflow: scroll;
+}
+
+/* hide  scrollbar */
+
+.queue::-webkit-scrollbar {
+	display: none;
+}
+/*----------- queue-item ----------*/
+
+.queue-item {
+
+	box-sizing: border-box;
+	/*border: 1px solid white;*/
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	margin-bottom: 12px;
+	height: 100px;
+	width: 90%;
+	
+}
+/* hover effect on queue-item */
+
+.queue-item:hover {
+	background-color:#2e3249;
+}
+/*  name and image of the songs */
+
+.queue-item > div:nth-child(1) {
+	position: relative;
+	width: 100px;
+	height: 100%;
+	
+}
+.queue-item > div:nth-child(1) > img {
+	height: 100%;
+	width: 100%;
+	
+}
+.artist-name{
+	font-size: 12px;
+	color: rgb(185, 185, 185);
+}
+.option{
+	height: 100%;
+	margin-right: 10%;
+	margin-top: 10% ;	
+}
+
+
+/*     recently playlist   */
+
+
+/*      aside-2 section headings */
+
+#aside-2{
+	margin-top: -10%;
+
+}
+
+
+#aside-2 h4 a{
+	text-decoration: none;
+	color: yellow;
+}
+
+
+/*   queue-options */
+
+
+.queue-options {
+	position: fixed;
+	right: 4%;
+	top: 14%;
+	background-color: #f8f9fa;
+	width: 10%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 1%;
+	box-sizing: border-box;
+	overflow: hidden;
+	z-index: 2; /* to cover the heart icon */
+	opacity: 0;
+	transform: scale(0);
+	transition: all ease-in-out 0.25s;
+}
+
+
+/*  queue option box becomes target */
+
+
+#queue-option-boxes:target{
+	opacity:1;
+	transform:scale(1);
+}
+.queue-options{
+	color: black;
+}
+.queue-options p{
+	text-align: center;
+}
+.queue-options p a{
+	text-decoration: none;
+}
+
+/*    queue-content  section we have image,name, like button */
+.queue-content{
+	width: 100%;
+	height: 75vh;
+	display: flex;
+	flex-direction: column;
+	overflow: scroll;
+	cursor: pointer;
+}
+
+/* Queue-content  scroll bar */
+
+
+.queue-content::-webkit-scrollbar{
+	display: none;
+}
+
+
+.left-content{
+	display: flex;
+	height: 100%;
+	width: 30%;
+	color: white;
+	flex-direction: row;
+	flex-wrap: no-wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 1%;
+}
+
+
+/* -------------- glowing-heart ---------*/
+
+@keyframes glowing-heart{
+	0% {
+		color: yellow;
+	}
+	50% {
+		color: orangered;
+	}
+	100% {
+		color: red;
+	}
+}
+
+
+/* -------- hover effect on heart ------------ */
+
+
+.right-content:hover .fa-heart{
+	animation-name: glowing-heart;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-duration: 1s;
+}
+
+
+
+.play-button-2{
+	height: 90px;
+	width: 90px;
+	top: 0%;
+	left: 20%;
+	position: absolute;
+      background-color: black;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: all ease-in-out 0.2s;
+}
+
+     /* -------------- hover effects------------- */
+
+.play-button-2:hover {
+	opacity: 0.8;
+}
+
+
+/* ---------------- footer section ------------------------ */
+
+footer {
+	position: fixed;
+	bottom: 1px;
+	width: 100%;
+	height: 60px;
+	background-color: #282828;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+	flex-wrap: nowrap;
+	padding: 0px 3%;
+	box-sizing: border-box;
+	z-index: 6;
+}
+
+/*------------------------ music-section ----------------------------*/
+.music-section{
+	/* border:1px solid white; */
+	height: 90%;
+	width: 25%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/* -------------------- image-music ----------------------------------*/
+
+#image-music{
+	width: 50px;
+	height: 50px;
+	min-width: 50px;
+	min-height: 50px;
+	margin-top: 1%;
+}
+
+/*  image */
+
+#image-music img{
+	width: 100%;
+	height: 100%;
+	margin-top: 5%;
+}
+
+/* heart icon and ban icon */
+
+.icons{
+	height: 100%;
+	padding-top: 4%;
+
+}
+
+
+/* music description */
+
+.music-description{
+	margin-right: 1%;
+	margin-left: 1%;
+	margin-top: 1%;
+
+}
+
+/*  name */
+
+.music-description div:nth-child(1) {
+	font-size: 14px;
+}
+
+/* artist */
+
+.music-description div:nth-child(2) {
+	font-size: 12px;
+}
+
+/* music controls section */
+
+.music{
+	width: 45%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: nowrap;
+}
+
+/*      controls section    */
+.controls{
+	width: 40%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 20px;
+}
+
+/*  ------------- music slider--------------------*/
+
+#music-slider{
+	width: 100%;
+	font-size: 12px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	margin-top: 5px;
+}
+
+/*-------------------- music duration ------------------------------*/
+
+.duration {
+	margin: 0px 10px;
+}
+
+/*  sliding for better visuals */
+.sliding{
+	width: 100%;
+}
+
+/*   music section */
+.slider{
+	-webkit-appearance: none;
+	width: 100%;
+	height: 5px;
+	background: #d3d3d3;
+	outline: none;
+	opacity: 0.5;
+	-webkit-transition: 0.2s;
+	transition: opacity 0.2s;
+}
+
+/* hover effect for the slider */
+.slider:hover {
+	opacity: 1.2;
+}
+ 
+/* slider for song duration */
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	background: #007bff;
+	border-radius: 50%;
+	cursor: pointer;
+	width: 17px;
+	height: 17px;
+	
+}
+
+/* slider for music range */
+.slider::-moz-range-thumb {
+	background: #4caf50;
+	cursor: pointer;
+	height: 25px;
+	width: 25px;
+	
+	
+}
+.total-duration{
+	margin-left: 4%;
+}
+
+/* other icons */
+.icons-2{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+     width: 20%;
+}
